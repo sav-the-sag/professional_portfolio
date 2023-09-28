@@ -1,0 +1,14 @@
+/* universal element to make a border */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* created a root pseudo class to make a color palette */
+  :root {
+    --primary: rgb(131, 3, 131);
+    --secondary: rgb(209, 209, 124);
+    --tertiary: rgb(214, 109, 170);
+    --dark: rgb(74, 5, 77);
+    --light: rgba(238, 238, 247, 1);
+  }
+  

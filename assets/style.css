@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   
-  /* created a root pseudo class to make a color palette */
+/* created a root pseudo class to make a color palette */
   :root {
     --primary: rgb(131, 3, 131);
     --secondary: rgb(209, 209, 124);
@@ -11,7 +11,7 @@
     --dark: rgb(74, 5, 77);
     --light: rgba(238, 238, 247, 1);
   }
-
+/* style everything inside the body, including the text and background color */
   body {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
     background-color: var(--light);
     line-height: 1.5;
   }
-
+/* add flex property to header and add a background color */
   header {
     padding: 10px 2% 10px 0;
     display: flex;
@@ -30,4 +30,52 @@
     align-items: center;
     background-color: var(--tertiary);
   }
+/* style my name and add yellow behind the text */
+  header h1 {
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+/* add flex to nav links (about me, work, contact me, and resume) */
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+/* dot operator indicates a class, add margin to class "page-wrapper" */
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* add margin, padding, and flex properties to class "page-section" */  
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+/* add a line between the about me, work, and contact me and the content with border-right, make each section flexible using flex: 0 0 20% */  
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+/* make the paragraph in the about me section flexible using flex: 0 0 75% */
+  .page-section > div {
+    flex: 0 0 75%;
+  }
+/* add margin to the bottom of the paragraph */
+  .page-section p {
+    margin-bottom: 20px;
+  }  
   

@@ -42,7 +42,7 @@
 /* add flex to nav links (about me, work, contact me, and resume) */
   nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 /* dot operator indicates a class, add margin to class "page-wrapper" */
@@ -71,11 +71,21 @@
     line-height: 1.1;
   }
 /* make the paragraph in the about me section flexible using flex: 0 0 75% */
-  .page-section > div {
+.page-section > div {
     flex: 0 0 75%;
   }
 /* add margin to the bottom of the paragraph */
-  .page-section p {
+.page-section p {
     margin-bottom: 20px;
   }  
-  
+
+/* add flex to class "flex-container" (where work is) */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+/* portfolio project image */
+.accessible_website {
+    background-image: url();
+}

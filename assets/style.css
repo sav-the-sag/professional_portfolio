@@ -112,8 +112,8 @@ flex-basis: 100%;
     display: block;
 height: 100px;
 background-repeat: no-repeat;
-background-size: 10px;
-background-position: center;
+background-size: 200px;
+background-position: left;
 }
 /* make webpage dynamic by adding media queries */
 @media screen and (max-width: 980px) {
